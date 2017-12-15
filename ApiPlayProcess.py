@@ -49,7 +49,7 @@ class ApiChannel():
 #    def getDesc(self):
     def getDb(self,pname):
         try:
-	    con = mdb.connect("192.168.1.120","cb","ltv9201712","learntv_schema")
+	    con = mdb.connect("192.168.1.120","user","password","db")
 #            con.set_character_set('utf8')
             cur = con.cursor()
             cur.execute('SET NAMES utf8;')
