@@ -21,7 +21,7 @@ class ApiChannel():
     
     def __init__(self):
         #global initialization, define variable class itself
-        self.client = pymongo.MongoClient('mongodb://192.168.1.110:27017/',connect=False)
+        self.client = pymongo.MongoClient('mongodb://192.168.0.0:27017/',connect=False)
         self.monthn = self.getMonth() # get current month
         self.curday = self.getDay()  #get current day 
         self.totline = "" #assign empty variable
